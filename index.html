@@ -12,7 +12,22 @@
    <body>
       <main>
          <h1>Welcome to your Task Manager</h1>
-         <section class="user-add-task"></section>
+         <section class="user-add-task">
+            <div class="submit-form">
+               <form>
+                  <label for="taskTitle">Enter Task Title</label>
+                  <input type="text" id="taskTitle" name="task_title" />
+
+                  <label for="taskDate">Enter Task deadline date</label>
+                  <input type="text" id="taskDate" name="task_date" />
+
+                  <label for="taskDesc">Enter Task Description</label>
+                  <input type="text" id="taskDesc" name="task_desc" />
+
+                  <input type="submit" value="ADD TASK" />
+               </form>
+            </div>
+         </section>
 
          <section class="tasks-section">
             <div class="task-box">

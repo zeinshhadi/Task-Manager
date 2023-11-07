@@ -2,4 +2,9 @@
    .task-box {
       width: 90%;
    }
+
+   .submit-form {
+      width: 90%;
+      padding: 2%;
+   }
 }
