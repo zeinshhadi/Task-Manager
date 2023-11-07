@@ -5,22 +5,30 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="./style/style.css" />
       <link rel="stylesheet" href="./style/utilites.css" />
+      <link rel="stylesheet" href="style/mobile.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
       <title>Task Manager</title>
    </head>
    <body>
       <main>
          <h1>Welcome to your Task Manager</h1>
+         <section class="user-add-task"></section>
 
          <section class="tasks-section">
             <div class="task-box">
-               <div class="task-header">
-                  <div class="task-name"></div>
-                  <div class="delete-task"></div>
-                  <div class="edit-name"></div>
-               </div>
-               <div class="task-body">
-                  <div class="task-description"></div>
-                  <div class="task-mark"></div>
+               <div class="taskcontaier">
+                  <div class="task-header">
+                     <div class="task-name">Task Title</div>
+                     <div class="task-actions">
+                        <div class="delete-task"><i class="fa fa-trash"></i></div>
+                        <div class="edit-name"><i class="fa fa-edit"></i></div>
+                     </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="task-body">
+                     <div class="task-description">Body Description</div>
+                     <div class="task-mark">Task Mark</div>
+                  </div>
                </div>
             </div>
          </section>
