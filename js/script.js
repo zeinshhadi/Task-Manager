@@ -53,25 +53,23 @@ addTaskButton.addEventListener("click", function () {
    });
 
    function edit(event) {
-      displayWindow = document.querySelector(".edit-form");
-      displayWindow.style.display = "inline";
-
+      displayPopUp("inline");
       let taskContainer = event.target.closest(".task-box");
       let editTaskButton = document.getElementById("edit-task-btn");
 
       editTaskButton.addEventListener("click", function () {
-         let newTitle = document.getElementById("editTaskTitle").value;
-         let newDesc = document.getElementById("editTaskDesc").value;
-         if (newTitle && newDesc) {
+         let inputs = getInput();
+
+         if (inputs.title && inputs.description) {
             let taskElementTitle = taskContainer.querySelector(".task-name");
 
-            taskElementTitle.innerHTML = newTitle;
+            taskElementTitle.innerHTML = inputs.title;
 
             let taskElementDesc = taskContainer.querySelector(".task-description");
 
-            taskElementDesc.innerHTML = newDesc;
+            taskElementDesc.innerHTML = inputs.description;
 
-            displayWindow.style.display = "none";
+            displayPopUp("none");
          } else {
             alert("Empty Values");
          }
@@ -89,3 +87,15 @@ addTaskButton.addEventListener("click", function () {
       taskContainer.remove();
    }
 });
+
+function displayPopUp(status) {
+   displayWindow = document.querySelector(".edit-form");
+   displayWindow.style.display = status;
+}
+
+function getInput() {
+   let newTitle = document.getElementById("editTaskTitle").value;
+   let newDesc = document.getElementById("editTaskDesc").value;
+
+   return { title: newTitle, description: newDesc };
+}
