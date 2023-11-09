@@ -1,7 +1,7 @@
 let addTaskButton = document.getElementById("add-task-btn");
 
 let taskSection = document.getElementById("tasks-section");
-let counter = 1;
+
 addTaskButton.addEventListener("click", function () {
    let taskTitleInput = document.getElementById("taskTitle");
    let taskDescInput = document.getElementById("taskDesc");
@@ -10,7 +10,7 @@ addTaskButton.addEventListener("click", function () {
 
    if (taskTitle && taskDesc) {
       taskSection.innerHTML += `
-      <div class="task-box" id="taskList" task-id="${counter}">
+      <div class="task-box" id="taskList" ">
                      <div class="taskcontaier">
                          <div class="task-header">
                              <div class="task-name" id="task-title">${taskTitle}</div>
@@ -27,7 +27,6 @@ addTaskButton.addEventListener("click", function () {
                      </div>
                      </div>
                  `;
-      counter++;
 
       taskTitleInput.value = "";
       taskDescInput.value = "";

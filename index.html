@@ -15,12 +15,15 @@
          <h1>Welcome to your Task Manager</h1>
          <section class="user-add-task" id="user-add-task">
             <div class="user-form">
-               <label for="taskTitle">Enter Task Title</label>
-               <input type="text" id="taskTitle" name="task_title" />
+               <input type="text" id="taskTitle" name="task_title" placeholder="Enter Task Title" />
 
-               <label for="taskDesc">Enter Task Description</label>
-               <input type="text" id="taskDesc" name="task_desc" />
-
+               <input type="text" id="taskDesc" name="task_desc" placeholder="Enter Task Description" />
+               <input type="date" id="priority-date" name="date" />
+               <select id="drop-down">
+                  <option value="high-priority">High Priority</option>
+                  <option value="medium-priority">Medium Priority</option>
+                  <option value="low-priority">Low Priority</option>
+               </select>
                <div id="add-task-btn" class="add-task-btn">ADD TASK</div>
             </div>
          </section>
