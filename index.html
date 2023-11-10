@@ -15,24 +15,28 @@
          <h1>Welcome to your Task Manager</h1>
          <section class="user-add-task" id="user-add-task">
             <div class="user-form">
+               <!--User input div for title and desc-->
                <input type="text" id="taskTitle" name="task_title" placeholder="Enter Task Title" />
 
                <input type="text" id="taskDesc" name="task_desc" placeholder="Enter Task Description" />
-
+               <!--add task div -->
                <div id="add-task-btn" class="add-task-btn">ADD TASK</div>
             </div>
          </section>
+         <!--Pop up section set to display none until it is set to be inline from script-->
          <section class="user-edit-task" id="user-edit-task">
             <div class="user-form edit-form">
+               <!--User input div for title and desc-->
                <label for="editTaskTitle">Enter Task Title</label>
                <input type="text" id="editTaskTitle" name="editTask_title" />
 
                <label for="editTaskDesc">Enter Task Description</label>
                <input type="text" id="editTaskDesc" name="task_desc" />
-
+               <!--edit task div -->
                <div id="edit-task-btn" class="add-task-btn">ADD TASK</div>
             </div>
          </section>
+         <!--Section where tasks will be added -->
          <section class="tasks-section" id="tasks-section"></section>
       </main>
       <script src="./js/script.js"></script>
