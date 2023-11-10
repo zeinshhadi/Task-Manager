@@ -47,7 +47,7 @@ addTaskButton.addEventListener("click", function () {
 
    let editTitle = document.querySelectorAll(".edit-name");
 
-   editTitle.forEach((titleEdit) => {
+   editTitle.forEach(function (titleEdit) {
       titleEdit.addEventListener("click", edit);
    });
 
@@ -77,7 +77,7 @@ addTaskButton.addEventListener("click", function () {
 
    let deleteButtons = document.querySelectorAll(".delete-task");
 
-   deleteButtons.forEach((deleteButton) => {
+   deleteButtons.forEach(function (deleteButton) {
       deleteButton.addEventListener("click", deleteTask);
    });
 
