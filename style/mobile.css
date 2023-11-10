@@ -7,4 +7,7 @@
       width: 90%;
       padding: 2%;
    }
+   .add-task-btn {
+      margin: 0;
+   }
 }
